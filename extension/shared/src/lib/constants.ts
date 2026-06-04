@@ -1,5 +1,39 @@
 export const APP_URL = "https://www.opportunitycost.app";
-export const API_BASE = "https://www.opportunitycost.app/api/bitcoin-price";
+
+const COINGECKO_CURRENCIES = [
+  "usd",
+  "eur",
+  "gbp",
+  "jpy",
+  "cny",
+  "cad",
+  "ars",
+  "aud",
+  "brl",
+  "clp",
+  "czk",
+  "dkk",
+  "huf",
+  "hkd",
+  "inr",
+  "idr",
+  "mxn",
+  "twd",
+  "nzd",
+  "nok",
+  "php",
+  "pln",
+  "rub",
+  "sgd",
+  "zar",
+  "krw",
+  "sek",
+  "chf",
+  "try",
+  "vnd",
+].join(",");
+
+export const API_BASE = `https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=${COINGECKO_CURRENCIES}`;
 
 export const DEFAULT_REFRESH_INTERVAL = 15 * 60 * 1000; // 15 minutes in milliseconds
 export const CACHE_DURATION = 5 * 60 * 1000; // 5 minute cache duration for aggressive caching
