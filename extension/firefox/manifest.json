@@ -1,7 +1,7 @@
 {
   "name": "Opportunity Cost",
   "description": "See every price in satoshis. Understand the Bitcoin opportunity cost of your purchases.",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "manifest_version": 2,
   "permissions": ["<all_urls>", "storage"],
   "browser_action": {
@@ -29,7 +29,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "opportunity-cost-local@benalleng.local",
+      "id": "{d2e34a42-c6e3-4c71-8fcd-5053a074e687}",
       "data_collection_permissions": {
         "required": ["none"]
       }
